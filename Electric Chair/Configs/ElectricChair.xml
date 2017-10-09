@@ -1,0 +1,29 @@
+<configs>
+	<config name="blocks">	
+		<!-- Electric Chair By JaxTeller718 -->
+		<append xpath="/blocks">	
+			<block id="" name="electricChair">
+				<property name="Extends" value="woodMaster" />
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#electricChair?electricChairPrefab" />
+        		<property name="CustomIcon" value="electricChairPrefab" />
+        		<property name="DescriptionKey" value="electricChairDesc"/>
+				<property name="MultiBlockDim" value="1,2,1" />
+	        	<property name="CanMobsSpawnOn" value="false"/>
+	        	<property name="BuffsWhenWalkedOn" value="shockedBuff"/>
+			</block>
+		</append>
+	</config>
+<config name="recipes">
+<append xpath="/recipes">
+	<!-- Electric Chair by JaxTeller718 -->
+	<recipe name="electricChair" count="1">
+		<ingredient name="forgedIron" count="50"/>
+		<ingredient name="wood" count="200"/>
+		<ingredient name="electronicParts" count="10"/>
+	</recipe>
+	<!-- Electric Chair -->
+</append>
+</config>
+
+</configs>
