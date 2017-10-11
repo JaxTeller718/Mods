@@ -1,0 +1,3 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish
+mailboxUSPS,"","","","USPS mailbox","","","",""
+mailboxUSPSDesc,"","","","Looks like service is just as efficient as it was when people were living","","","",""

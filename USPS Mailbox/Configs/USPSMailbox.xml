@@ -1,0 +1,41 @@
+<configs>
+	<config name="blocks">	
+		<!-- USPS Mailbox By JaxTeller718 -->
+		<append xpath="/blocks">	
+			<block id="" name="mailboxUSPS">
+				<property name="Extends" value="scrapIronNoUpgradeMaster" />
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#mailboxUSPS?mailboxUSPSPrefab" />
+        		<property name="CustomIcon" value="mailboxUSPS" />
+        		<property name="DescriptionKey" value="mailboxUSPSDesc"/>
+				<property name="Class" value="Loot"/>
+				<property name="Material" value="Mmetal_thin"/>
+				<property name="MultiBlockDim" value="1,2,1" />
+				<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="LootList" value="14"/>
+            	<property name="Place" value="TowardsPlacerInverted"/>
+				<property name="Stacknumber" value="25"/>
+				<property name="FuelValue" value="150"/>
+				<property class="RepairItems"> <property name="forgedIron" value="5"/> 
+				</property>
+				<drop event="Destroy" name="scrapIron" count="5"/>
+				<property name="EconomicValue" value="12"/>
+				</block>
+
+		</append>
+	</config>
+
+
+<config name="recipes">
+<append xpath="/recipes">
+	<!-- USPS Mailbox by JaxTeller718 -->
+<recipe name="mailboxUSPS" count="1">
+	<ingredient name="forgedIron" count="20"/>
+</recipe>
+	<!-- USPS Mailbox -->
+</append>
+</config>
+
+
+</configs>
