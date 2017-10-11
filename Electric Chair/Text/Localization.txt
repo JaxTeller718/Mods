@@ -1,3 +1,0 @@
-Key,Source,Context,Changes,English,French,German,Klingon,Spanish
-electricChair,"","","","Electric Chair","","","",""
-electricChairDesc,"","","","Back in the day when law actually ruled the lands this chair saw its fair share of victims. Now it sits hunfry and waiting","","","",""
