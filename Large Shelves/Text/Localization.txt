@@ -1,0 +1,5 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish
+largeShelf2,"","","","Large Shelf","","","",""
+largeShelf2Desc,"","","","Spacious shelf for all your favorite things","","","",""
+largeShelf,"","","","Large Bookshelf","","","",""
+largeShelfDesc,"","","","Spacious book shelf for all your schematics and books","","","",""

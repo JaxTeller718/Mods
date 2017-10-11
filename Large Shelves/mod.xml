@@ -1,0 +1,15 @@
+<mod>
+	<info>
+		<author>JaxTeller718</author>
+		<name>Large Shelves</name>
+		<description>2 large shelves for storing things</description>
+		<mod_version>1.0</mod_version>
+		<game_version>16.3</game_version>
+		<launcher_version></launcher_version>
+	</info>
+	
+	<config_mods>
+		<import file="Configs\LargeShelves.xml" />
+	</config_mods>
+	
+</mod>

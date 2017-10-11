@@ -1,0 +1,59 @@
+<configs>
+	<config name="blocks">	
+		<!-- Large Shelf By JaxTeller718 -->
+		<append xpath="/blocks">	
+			<block id="" name="largeShelf2">
+				<property name="Extends" value="woodMaster" />
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#largeShelf2?largeShelf2Prefab" />
+				<property name="Class" value="SecureLoot" />
+				<property name="LootList" value="152" />
+        		<property name="CustomIcon" value="largeShelf2" />
+        		<property name="DescriptionKey" value="largeShelf2Desc"/>
+				<property name="MultiBlockDim" value="3,3,1" />
+				<property name="Stacknumber" value="25"/>
+            	<property name="Place" value="TowardsPlacerInverted"/>
+			</block>
+		<!-- Large Bookshelf By JaxTeller718 -->
+			<block id="" name="largeShelf">
+				<property name="Extends" value="woodMaster" />
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#largeShelf?largeShelfPrefab" />
+				<property name="Class" value="SecureLoot" />
+				<property name="LootList" value="150" />
+        		<property name="CustomIcon" value="largeShelf" />
+        		<property name="DescriptionKey" value="largeShelfDesc"/>
+				<property name="MultiBlockDim" value="3,3,1" />
+				<property name="Stacknumber" value="25"/>
+            	<property name="Place" value="TowardsPlacerInverted"/>
+			</block>
+		</append>
+	</config>
+<config name="recipes">
+<append xpath="/recipes">
+	<!-- Large Shelf by JaxTeller718 -->
+	<recipe name="largeShelf2" count="1"     craft_area="workbench" >
+		<ingredient name="wood" count="20"  />
+		<ingredient name="nail" count="10"  />
+	</recipe>
+	<!-- Large Shelf -->
+	<!-- Large Bookshelf by JaxTeller718 -->
+	<recipe name="largeShelf" count="1"     craft_area="workbench" >
+		<ingredient name="wood" count="20"  />
+		<ingredient name="nail" count="10"  />
+	</recipe>
+	<!-- Large Bookshelf  by JaxTeller718 -->
+</append>
+</config>
+<config name="loot">
+<append xpath="/lootcontainers">
+	<!-- Large Bookshelf by JaxTeller718 -->
+	<lootcontainer id="150" size="8,9" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer"> </lootcontainer>
+	<!-- Large Bookshelf by JaxTeller718 -->
+	
+	<!-- Large Shelf  by JaxTeller718 -->
+	<lootcontainer id="152" size="8,9" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer"> </lootcontainer>
+	<!-- Large Shelf by JaxTeller718 -->
+</append>
+</config>
+</configs>
