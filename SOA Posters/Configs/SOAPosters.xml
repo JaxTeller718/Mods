@@ -1,0 +1,95 @@
+<configs>
+	<config name="blocks">	
+		<!-- Sons of Anarchy Posters By JaxTeller718 -->
+		<append xpath="/blocks">	
+
+<block id="" name="soaposter1">
+				<property name="Material" value="glass"/>
+				<property name="Model" value="#soaposter1?soaposter1Prefab" />
+        		<property name="CustomIcon" value="soaposter1" />
+				<property name="MultiBlockDim" value="1,2,1" />
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="CanPickup" value="true"/>
+				<drop event="Destroy" name="brokenGlass" count="1,2"/>
+				<property name="DescriptionKey" value="soapostersDesc"/>
+            	<property name="Place" value="TowardsPlacerInverted"/>
+				<property name="Collide" value="melee,bullet,arrow,rocket"/>
+				<property name="ImposterDontBlock" value="true"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="EconomicValue" value="100"/>
+				<property name="EconomicBundleSize" value="1"/>
+				<property name="Stacknumber" value="5"/>
+			</block>
+<block id="" name="soaposter2">
+				<property name="Extends" value="soaposter1" />
+				<property name="Model" value="#soaposter2?soaposter2Prefab" />
+        		<property name="CustomIcon" value="soaposter2" />
+		    	<property name="Shape" value="ModelEntity" />
+</block>
+<block id="" name="soaposter3">
+				<property name="Extends" value="soaposter1" />
+				<property name="Model" value="#soaposter3?soaposter3Prefab" />
+        		<property name="CustomIcon" value="soaposter3" />
+		    	<property name="Shape" value="ModelEntity" />
+
+</block>
+<block id="" name="soaposter4">
+				<property name="Extends" value="soaposter1" />
+				<property name="Model" value="#soaposter4?soaposter4Prefab" />
+        		<property name="CustomIcon" value="soaposter4" />
+		    	<property name="Shape" value="ModelEntity" />
+
+</block>
+
+<block id="" name="soaposter5">
+				<property name="Extends" value="soaposter1" />
+				<property name="Model" value="#soaposter5?soaposter5Prefab" />
+        		<property name="CustomIcon" value="soaposter5" />
+		    	<property name="Shape" value="ModelEntity" />
+
+</block>
+<block id="" name="soaposter6">
+				<property name="Extends" value="soaposter1" />
+				<property name="Model" value="#soaposter6?soaposter6Prefab" />
+        		<property name="CustomIcon" value="soaposter6" />
+		    	<property name="Shape" value="ModelEntity" />
+
+</block>
+<block id="" name="soaposter7">
+				<property name="Extends" value="soaposter1" />
+				<property name="Model" value="#soaposter7?soaposter7Prefab" />
+        		<property name="CustomIcon" value="soaposter7" />
+		    	<property name="Shape" value="ModelEntity" />
+
+</block>
+<block id="" name="soaposter8">
+				<property name="Extends" value="soaposter1" />
+				<property name="Model" value="#soaposter8?soaposter8Prefab" />
+        		<property name="CustomIcon" value="soaposter8" />
+		    	<property name="Shape" value="ModelEntity" />
+
+</block>
+
+
+		</append>
+	</config>
+	<config name="loot">
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+			<lootgroup name="soaPosters" count="1"><!-- This is good for zombie loot groups to limit items to those that reasonably might be carried.   -->
+				<item name="soaposter1" />
+				<item name="soaposter2" />
+				<item name="soaposter3" />
+				<item name="soaposter4" />
+				<item name="soaposter5" />
+				<item name="soaposter6" />
+				<item name="soaposter7" />
+				<item name="soaposter8" />
+
+			</lootgroup>
+		</insertAfter>
+		<append xpath="/lootcontainers/lootgroup[@name='junk']">
+				<item group="soaPosters" prob="0.05"/>
+		</append>		
+	</config>
+
+</configs>

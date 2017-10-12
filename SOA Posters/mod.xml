@@ -1,0 +1,15 @@
+<mod>
+	<info>
+		<author>JaxTeller718</author>
+		<name>SOA Posters</name>
+		<description>A collection of Sons of Anarchy Themed posters</description>
+		<mod_version>1.0</mod_version>
+		<game_version>16.3</game_version>
+		<launcher_version></launcher_version>
+	</info>
+	
+	<config_mods>
+		<import file="Configs\SOAPosters.xml" />
+	</config_mods>
+	
+</mod>

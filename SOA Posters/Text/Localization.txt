@@ -1,0 +1,10 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish
+soaposter1,"","","","SOA Poster 1","","","",""
+soaposter2,"","","","SOA Poster 2","","","",""
+soaposter3,"","","","SOA Poster 3","","","",""
+soaposter4,"","","","SOA Poster 4","","","",""
+soaposter5,"","","","SOA Poster 5","","","",""
+soaposter6,"","","","SOA Poster 6","","","",""
+soaposter7,"","","","SOA Poster 7","","","",""
+soaposter8,"","","","SOA Poster 8","","","",""
+soapostersDesc,"","","","A tribute to Sons of Anarchy. Hang it proudly in your clubhouse","","","",""
