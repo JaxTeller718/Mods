@@ -1,0 +1,81 @@
+<configs>
+	<config name="blocks">	
+		<!-- Wheat By JaxTeller718 -->
+		<append xpath="/blocks">	
+
+	<block id="" name="plantedWheat1">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#plantedWheat1?plantedWheat1Prefab" />
+		<property name="CustomIcon" value="plantedWheat1"/>
+	<property name="Collide" value="melee"/>
+		<property name="PlantGrowing.Next" value="plantedWheat2"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="plantedWheat2"/>
+		</property>
+		<drop event="Destroy" name="plantedWheat1" count="1"/>
+	</block>
+	<block id="" name="plantedWheat2">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		<property name="CustomIcon" value="treePlainsGrassDiagonal"/>
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#plantedWheat2?plantedWheat2Prefab" />
+	<property name="Collide" value="melee"/>
+		<property name="PlantGrowing.Next" value="plantedWheat3Harvest"/>
+		<drop event="Destroy" name="plantedWheat1" count="1"/>
+	</block>
+	<block id="" name="plantedWheat3Harvest">
+		<property name="Extends" value="cropsHarvestableMaster"/>
+		<property name="CustomIcon" value="treeSnowyGrassDiagonal"/>
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#plantedWheat3Harvest?plantedWheat3HarvestPrefab" />
+	<property name="Collide" value="melee"/>
+		<drop event="Harvest" name="Wheat" count="1" />
+	</block>
+		</append>
+	</config>
+
+	<config name="items">
+<append xpath="/items">
+	<!-- Wheat -->
+
+	<item id="" name="Wheat">
+		<property name="Meshfile" value="Items/Crafting/plant_fibers"/>
+		<property name="Material" value="organic"/>
+		<property name="HoldType" value="16"/>
+		<property name="CraftingIngredientTime" value="5"/>
+		<property name="EconomicValue" value="10"/>
+		<property name="EconomicBundleSize" value="5"/>
+		<property class="Action0">
+			<property name="Class" value="PlaceAsBlock"/>
+			<property name="Delay" value="0.5"/>
+			<property name="Blockname" value="plantedWheat1"/>
+		</property>
+		<property class="Action1">
+			<property name="Class" value="PlaceAsBlock"/>
+			<property name="Delay" value="0.5"/>
+			<property name="Blockname" value="plantedWheat1"/>
+		</property>
+		<property name="Group" value="Food/Cooking"/>
+		<property name="DescriptionKey" value="wheatDesc"/>
+	</item>
+		</append>
+	</config>	
+<config name="recipes">
+<append xpath="/recipes">
+	<!-- Wheat by JaxTeller718 -->
+	<recipe name="plantedWheat1" count="1" craft_time="1"  >
+		<ingredient name="Wheat" count="1"/>
+	</recipe>	
+	<!-- Wheat -->
+</append>
+</config>
+
+<config name="loot">
+<append xpath="/lootcontainers/lootgroup[@name='seeds']">
+		<item name="plantedWheat1" />
+</append>
+
+</config>
+
+</configs>

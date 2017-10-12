@@ -1,0 +1,4 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish
+plantedWheat1,"","","","Wheat Seed","","","",""
+wheatDesc,"","","","A crop usually used to make flour and yeast","","","",""
+plantedWheat3Harvest,"","","","Planted Wheat 3 (Harvestable)","","","",""
