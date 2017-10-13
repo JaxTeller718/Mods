@@ -1,0 +1,3 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish
+ceilingFan,"","","","Ceiling Fan","","","",""
+ceilingFanDesc,"","","","Maybe I could pull this down in a pinch","","","",""

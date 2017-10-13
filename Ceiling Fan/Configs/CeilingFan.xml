@@ -1,0 +1,30 @@
+<configs>
+	<config name="blocks">	
+		<!-- Ceiling Fan By JaxTeller718 -->
+		<append xpath="/blocks">	
+			<block id="" name="ceilingFan">
+				<property name="Extends" value="scrapIronNoUpgradeMaster" />
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#ceilingFan?ceilingFanPrefab" />
+        		<property name="CustomIcon" value="ceilingFan" />
+        		<property name="DescriptionKey" value="ceilingFanDesc"/>
+				<property name="Stacknumber" value="50"/>
+			</block>
+		</append>
+	</config>
+
+
+<config name="recipes">
+<append xpath="/recipes">
+	<!-- Ceiling Fan by JaxTeller718 -->
+	<recipe name="ceilingFan" count="1">
+		<ingredient name="forgedIron" count="10"/>
+		<ingredient name="wood" count="20"/>
+		<ingredient name="electronicParts" count="10"/>
+	</recipe>
+	<!-- Ceiling Fan -->
+</append>
+</config>
+
+
+</configs>
