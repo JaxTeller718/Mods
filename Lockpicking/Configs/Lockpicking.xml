@@ -1,0 +1,79 @@
+<configs>
+	<config name="blocks">	
+		<!-- Lockpicking By JaxTeller718 -->
+	
+	<insertAfter xpath="/blocks/block[@name='cntDeskSafe']/property[@name='EconomicValue']">
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="cntDeskSafeInsecure"/>
+			<property name="Item" value="Lockpick"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="25"/>
+		</property>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntWallSafe']/property[@name='EconomicValue']">
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="cntWallSafeInsecure"/>
+			<property name="Item" value="Lockpick"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="25"/>
+		</property>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntGunSafe']/property[@name='EconomicValue']">
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="cntGunSafeInsecure"/>
+			<property name="Item" value="Lockpick"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="25"/>
+		</property>
+	</insertAfter>
+	</config>
+
+	<config name="items">
+<append xpath="/items">
+	<!-- Lockpicking By JaxTeller718 -->
+
+	<item id="" name="Lockpick">
+				<property name="Degradation" value="125" param1="true"/>
+				<property name="DescriptionKey" value="LockpickDesc"/>
+        		<property name="CustomIcon" value="lockpick" />
+				<property name="Meshfile" value="#lockpick?lockpickPrefab" />
+				<property name="Material" value="organic"/>
+				<property name="HoldType" value="1"/>
+				<property name="Group" value="Tools/Traps"/>
+				<property name="Stacknumber" value="1"/>
+				<property class="Action1">
+				<property name="Class" value="Repair"/>
+				<property name="Delay" value="0.53"/>
+				<property name="Upgrade_hit_offset" value="-1"/>
+				<property name="Sound_start" value="UseActions/repair_block"/>
+				<property name="Allowed_upgrade_items" value="Lockpick"/>
+			</property>
+				<property name="Group" value="Tools/Traps"/>
+				<property name="CraftingSkillGroup" value="craftSkillTools"/>
+					<property class="Attributes">
+					<property name="DegradationMax" value="600,600"/>
+					<property name="DegradationRate" value="1,1"/>
+					</property>
+			</item>
+		</append>
+	</config>	
+<config name="recipes">
+<append xpath="/recipes">
+	<!-- Lockpicking by JaxTeller718 -->
+	<recipe name="Lockpick" count="1" craft_time="20">
+		<ingredient name="forgedSteel" count="10"/>
+	</recipe>
+	<!-- Lockpicking By JaxTeller718 -->
+</append>
+</config>
+
+<config name="loot">
+<append xpath="/lootcontainers/lootgroup[@name='rareAutomotive']">
+		<item name="Lockpick"  count="1" />
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='rareTools']">
+		<item name="Lockpick"  count="1" />
+</append>
+</config>
+
+</configs>

@@ -1,0 +1,15 @@
+<mod>
+	<info>
+		<author>JaxTeller718</author>
+		<name>Lockpicking</name>
+		<description>Adds a Lockpick, a recipe, loot and the ability to lockpick safes</description>
+		<mod_version>1.0</mod_version>
+		<game_version>16.3</game_version>
+		<launcher_version></launcher_version>
+	</info>
+	
+	<config_mods>
+		<import file="Configs\Lockpicking.xml" />
+	</config_mods>
+	
+</mod>

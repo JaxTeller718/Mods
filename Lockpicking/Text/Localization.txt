@@ -1,0 +1,2 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish
+LockpickDesc,"","","","Quietly open safes by holding this lockpick in your hand and using it on a locked safe","","","",""
