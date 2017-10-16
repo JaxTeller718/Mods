@@ -1,0 +1,9 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish
+rollingPaper,"","","","Rolling Paper","","","",""
+jointDesc,"","","","This is really a gift from mother nature herself. Smoke this for wellness. Impress your friends and gain trust with the Puma with your badassness. Craft with rolling paper and a funny smelling plant","","","",""
+plantedWeed1,"","","","Cannabis Seed","","","",""
+plantedWeed3Harvest,"","","","Planted Marijuana 3 (Harvestable)","","","",""
+rollingPaperDesc,"","","","This rolling paper can be used to make..... cigarettes. Yep cigarettes","","","",""
+gettingHighBuffDesc,"","","","Man you are HUNGRY! Hey what are you doing and where are you going!","","","",""
+gettingHighBuffName,"","","","You Are High!","","","",""
+gettingHighBuffTooltip,"","","","You have no idea what you are doing!","","","",""

@@ -1,0 +1,158 @@
+<configs>
+	<config name="blocks">	
+		<!-- Weed By JaxTeller718 -->
+		<append xpath="/blocks">	
+		
+		<block id="" name="plantedWeed1">
+				<property name="Extends" value="cropsGrowingMaster"/>
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#plantedWeed1?plantedWeed1Prefab" />
+				<property name="CustomIcon" value="plantedWeed1"/>
+				<property name="Collide" value="melee"/>
+				<property name="PlantGrowing.GrowthRate" value="120.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+				<property name="PlantGrowing.Next" value="plantedWeed2"/>
+				<property class="UpgradeBlock">
+				<property name="ToBlock" value="plantedWeed2"/>
+			</property>
+				<drop event="Destroy" name="plantedWeed1" count="1"/>
+		</block>
+		<block id="" name="plantedWeed2">
+				<property name="Extends" value="cropsGrowingMaster"/>
+				<property name="CustomIcon" value="plantedWeed2"/>
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#plantedWeed2?plantedWeed2Prefab" />
+				<property name="Collide" value="melee"/>
+		<property name="PlantGrowing.Next" value="plantedWeed3Harvest"/>
+		<drop event="Destroy" name="plantedWeed1" count="1"/>
+		</block>
+		<block id="" name="plantedWeed3Harvest">
+				<property name="Extends" value="cropsHarvestableMaster"/>
+				<property name="CustomIcon" value="plantedWeed3Harvest"/>
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#plantedWeed3Harvest?plantedWeed3HarvestPrefab" />
+				<property name="Collide" value="melee"/>
+				<drop event="Harvest" name="Weed" count="1" />
+		</block>
+		</append>
+	</config>
+
+	<config name="items">
+<append xpath="/items">
+	<!-- Weed by JaxTeller718 -->
+
+	<item id="" name="Weed">
+		<!-- scrap material -->
+		<property name="Meshfile" value="Items/Crafting/plant_fibers"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Weight" value="1"/>
+		<property name="Material" value="plants"/>
+		<property name="HoldType" value="16"/>
+		<property name="Stacknumber" value="500"/>
+		<!-- STK resource -->
+		<property name="FuelValue" value="1"/>
+		<property name="EconomicValue" value="5"/>
+		<property name="EconomicBundleSize" value="5"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="Group" value="Medicine"/>
+	</item>
+	<item id="" name="Joint">
+		<property name="DescriptionKey" value="jointDesc" />
+		<property name="CustomIcon" value="Joint" />
+		<property name="Meshfile" value="Items/Food/fruit_yucca"/>
+		<property name="Material" value="plants"/>
+		<property name="HoldType" value="14"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="FuelValue" value="3600"/>
+		<property name="EconomicValue" value="50"/>
+		<property name="EquipSlot" value="Face"/>
+		<property class="UMA">
+			<property name="Mesh" value="gear_cigar"/>
+			<property name="Overlay0" value="gear_cigar"/>
+			<property name="Overlay0Tint" value="51,255,51" />
+			<property name="Layer" value="1"/>
+			<property name="UISlot" value="Face"/>
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Use_time" value="..."/>
+			<property name="Gain_wellness" value="2"/>
+			<property name="Gain_health" value="20" />
+			<property name="Gain_food" value="-10" />
+			<property name="Gain_water" value="-10" />
+			<property name="Buff" value="baked" />
+			<property name="Group" value="Medicine"/>
+			<property name="Sound_start" value="swoosh"/>
+			<property name="SellableToTrader" value="false" />
+		</property>
+	</item>
+	<item id="" name="rollingPaper">
+		<!-- scrap material -->
+		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="HoldType" value="45"/>
+		<property name="DescriptionKey" value="rollingPaperDesc" />
+		<property name="Material" value="paper"/>
+		<property name="Stacknumber" value="50"/>
+		<!-- STK resource -->
+		<property name="FuelValue" value="1"/>
+		<property name="Weight" value="1"/>
+		<property name="EconomicValue" value="150"/>
+		<property name="EconomicBundleSize" value="5"/>
+		<property name="SellableToTrader" value="true"/>
+		<property name="Group" value="Medicine"/>
+	</item>
+		</append>
+	</config>	
+<config name="recipes">
+<append xpath="/recipes">
+	<!-- Weed by JaxTeller718 -->
+	<recipe name="Joint" count="1">
+		<ingredient name="Weed" count="3"/>
+		<ingredient name="rollingPaper" count="1"/>
+	</recipe>
+	<recipe name="plantedWeed1" count="1" craft_time="1"  >
+		<ingredient name="Weed" count="1"/>
+	</recipe>	
+	<!-- Weed by JaxTeller718 -->
+</append>
+</config>
+
+
+<config name="loot">
+<append xpath="/lootcontainers/lootgroup[@name='seeds']">
+		<item name="rollingPaper" count="1,2"/>
+		<item name="Weed" count="1"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='rareMedicine']">
+		<item name="rollingPaper" count="1,2"/>
+		<item name="Weed" count="1"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='backpacks']">
+		<item name="rollingPaper" count="1,2" prob="0.15"/>
+		<item name="Weed" count="1" prob="0.15"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='cupboard']">
+		<item name="rollingPaper" count="1,2" prob="0.15"/>
+		<item name="Weed" count="1" prob="0.15"/>
+
+	<!--  Weed by JaxTeller718 -->
+</append>
+</config>
+<config name="buffs">
+<append xpath="/buffs">
+	<!--  Weed by JaxTeller718 -->
+<buff id="gettingHighBuff" duration="60" stack="extend" type="staminaup" icon="ui_game_symbol_run"
+	name_key="gettingHighBuffName" description_key="gettingHighBuffDesc" tooltip_key="gettingHighBuffTooltip" causes="Joint">
+	<modify id="0" stat="stamina" amount="10" rate="1"/>
+</buff>
+<buff id="baked" duration="1800" stack="extend" actions="debuff(hangover)" type="staminaup" icon="ui_game_symbol_beer"
+	name_key="Baked" description_key="Man you are HUNGRY! Hey what are you doing and where are you going!" tooltip_key="You have no idea what you are doing!" causes="baked">
+	<modify id="0" stat="stamina" amount="-3" rate="2"/>
+</buff>
+	<!--  Weed by JaxTeller718 -->
+</append>
+</config>
+
+</configs>
