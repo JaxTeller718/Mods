@@ -1,0 +1,525 @@
+<configs>
+
+
+	<config name="items">
+<append xpath="/items">
+	<!-- Melee Weapons by JaxTeller718 -->
+
+		<item id="" name="woodtippedSpear">
+					<property name="Meshfile" value="#woodSpear?woodSpearPrefab" />
+					<property name="HoldType" value="18"/>
+					<property name="Material" value="metal"/>
+					<property name="RepairTools" value="wood"/>
+					<property name="DegradationBreaksAfter" value="false"/>
+					<property name="SoundJammed" value="ItemNeedsRepair"/>
+					<property name="SoundDestroy" value="wooddestroy1"/>
+					<property name="FuelValue" value="30"/>
+					<property name="EconomicValue" value="240"/>
+					<property class="Action0">
+					<!-- AttackAction -->
+					<property name="Class" value="Melee"/>
+					<property name="Delay" value="1.5"/>
+					<property name="Range" value="2.7"/>
+					<property name="Sphere" value="0.1"/>	
+					<property name="DamageEntity" value="8"/>
+					<property name="Sound_start" value="swoosh"/>
+					<property name="Stamina_usage" value="8"/>
+					<property name="DamageBonus.head" value="8"/>
+					<property name="DamageBonus.glass" value="25"/>
+					<property name="Buff" value="bleeding"/>
+					<property name="Buff_chance" value="0.25"/>
+					<property name="ActionExp" value="2"/>
+					<property name="ActionExpBonusMultiplier" value="10"/>
+					</property>
+					<property class="Attributes">
+					<property name="EntityDamage" value="8,12"/>
+					<property name="BlockDamage" value="1,1"/>
+					<property name="DegradationMax" value="600,600"/>
+					<property name="DegradationRate" value="3,1"/>
+					</property>
+					<property name="Group" value="Ammo/Weapons"/>
+					<property name="ActionSkillGroup" value="Blade Weapons"/>
+					<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+					<property name="DescriptionKey" value="woodSpearDesc"/>
+				</item>
+	<item id="" name="ironTippedSpear">
+					<property name="Meshfile" value="#ironSpear?ironSpearPrefab" />
+					<property name="HoldType" value="18"/>
+					<property name="Material" value="metal"/>
+					<property name="RepairTools" value="ironArrowHead"/>
+					<property name="DegradationBreaksAfter" value="false"/>
+					<property name="SoundJammed" value="ItemNeedsRepair"/>
+					<property name="SoundDestroy" value="wooddestroy1"/>
+					<property name="FuelValue" value="30"/>
+					<property name="EconomicValue" value="240"/>
+					<property class="Action0">
+					<!-- AttackAction -->
+					<property name="Class" value="Melee"/>
+					<property name="Delay" value="1.5"/>
+					<property name="Range" value="2.9"/>
+					<property name="Sphere" value="0.1"/>	
+					<property name="DamageEntity" value="15"/>
+					<property name="Sound_start" value="swoosh"/>
+					<property name="Stamina_usage" value="8"/>
+					<property name="DamageBonus.head" value="10"/>
+					<property name="DamageBonus.glass" value="25"/>
+					<property name="Buff" value="bleeding"/>
+					<property name="Buff_chance" value="0.25"/>
+					<property name="ActionExp" value="2"/>
+					<property name="ActionExpBonusMultiplier" value="10"/>
+					</property>
+					<property class="Attributes">
+					<property name="EntityDamage" value="10,20"/>
+					<property name="BlockDamage" value="1,1"/>
+					<property name="DegradationMax" value="600,600"/>
+					<property name="DegradationRate" value="3,1"/>
+					</property>
+					<property name="Group" value="Ammo/Weapons"/>
+					<property name="ActionSkillGroup" value="Blade Weapons"/>
+					<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+					<property name="DescriptionKey" value="ironTippedSpearDesc"/>
+				</item>
+		<item id="" name="steelTippedSpear">
+					<property name="Meshfile" value="#steelSpear?steelSpearPrefab" />
+					<property name="HoldType" value="18"/>
+					<property name="Material" value="metal"/>
+					<property name="RepairTools" value="steelArrowHead"/>
+					<property name="DegradationBreaksAfter" value="false"/>
+					<property name="SoundJammed" value="ItemNeedsRepair"/>
+					<property name="SoundDestroy" value="wooddestroy1"/>
+					<property name="FuelValue" value="30"/>
+					<property name="EconomicValue" value="240"/>
+					<property class="Action0">
+					<!-- AttackAction -->
+					<property name="Class" value="Melee"/>
+					<property name="Delay" value="1.5"/>
+					<property name="Range" value="2.9"/>
+					<property name="Sphere" value="0.1"/>	
+					<property name="DamageEntity" value="18"/>
+					<property name="Sound_start" value="swoosh"/>
+					<property name="Stamina_usage" value="8"/>
+					<property name="DamageBonus.head" value="12"/>
+					<property name="DamageBonus.glass" value="25"/>
+					<property name="Buff" value="bleeding"/>
+					<property name="Buff_chance" value="0.25"/>
+					<property name="ActionExp" value="2"/>
+					<property name="ActionExpBonusMultiplier" value="10"/>
+					</property>
+					<property class="Attributes">
+					<property name="EntityDamage" value="12,22"/>
+					<property name="BlockDamage" value="1,1"/>
+					<property name="DegradationMax" value="600,600"/>
+					<property name="DegradationRate" value="3,1"/>
+					</property>
+					<property name="Group" value="Ammo/Weapons"/>
+					<property name="ActionSkillGroup" value="Blade Weapons"/>
+					<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+					<property name="DescriptionKey" value="steelTippedSpearDesc"/>
+				</item>
+			<item id="" name="metalPipe">
+					<property name="Extends" value="clubIron"/>
+					<property name="Meshfile" value="#metalPipe?metalPipePrefab" />
+					<property name="CustomIcon" value="metalPipe"/>
+					<property name="RepairTools" value="forgedIron"/>
+					<property name="EconomicValue" value="192"/>
+					<property name="SellableToTrader" value="true"/>
+					<property class="Action0"> <!-- AttackAction -->
+					<property name="Stamina_usage" value="6.5"/>
+					<property name="Delay" value="1.15"/>
+					<property name="Buff" value="bleeding,criticalBlunt"/>
+					<property name="Buff_chance" value="0.3,0.3"/>
+					<property name="DamageBonus.head" value="5"/>
+				</property>
+					<property class="Attributes">
+					<property name="EntityDamage" value="8,19"/>
+					<property name="BlockDamage" value="7.2,18"/>
+					<property name="DegradationMax" value="200,600"/>
+					<property name="DegradationRate" value="1,1"/>
+				</property>
+					<property name="CritChance" value="0.3"/>
+					<property name="Group" value="Ammo/Weapons"/>
+					<property name="DescriptionKey" value="metalPipeDesc"/>
+			</item>
+			<item id="" name="Crowbar">
+					<property name="DescriptionKey" value="crowbarDesc"/>
+					<property name="Meshfile" value="#crowBar?crowBarPrefab" />
+					<property name="CustomIcon" value="Crowbar"/>
+					<property name="Material" value="metal"/>
+					<property name="Degradation" value="500" param1="false"/>
+					<property name="HoldType" value="47"/>
+					<property name="Stacknumber" value="1"/>
+					<property name="RepairTools" value="forgedSteel"/>
+					<property name="DegradationBreaksAfter" value="false"/>
+					<property name="SoundJammed" value="ItemNeedsRepair"/>
+					<property name="SoundDestroy" value="wooddestroy1"/>
+					<property class="Action0">
+					<property name="Class" value="Melee"/>
+					<property name="Delay" value="1.15"/>
+					<property name="Buff" value="criticalBlunt"/>
+					<property name="Buff_chance" value="0.3"/>
+					<property name="Stamina_usage" value="8.27"/>
+					<property name="DamageBonus.head" value="3"/>
+					<property name="DamageBonus.glass" value="1"/>
+					<property name="DamageBonus.stone" value="0.5"/>
+					<property name="DamageBonus.wood" value="1"/>
+					<property name="DamageBonus.metal" value="2"/>
+					<property name="DamageBonus.organic" value="0.5"/>
+					<property name="ActionExp" value="4"/>
+					<property name="Range" value="2"/>
+					<property name="Sphere" value="0.1"/>
+					<property name="Block_range" value="4"/>
+					<property name="DamageBlock" value="0"/>
+					<property name="Sound_start" value="swoosh"/>
+					<property name="ToolCategory.Disassemble" value="1" param1="2"  />
+					<property name="Sound_harvesting" value="wrench_harvest" param1="metal" />
+					<property name="Particle_harvesting" value="true" param1="metal" />
+				</property>
+					<property class="Attributes">
+					<property name="EntityDamage" value="8,19"/>
+					<property name="BlockDamage" value="7.2,18"/>
+					<property name="DegradationMax" value="250,750"/>
+					<property name="DegradationRate" value="1,1"/>
+				</property>
+					<property name="EconomicValue" value="75"/>
+					<property name="Group" value="Ammo/Weapons"/>
+					<property name="CraftingSkillGroup" value="craftSkillTools"/>
+					<property name="RepairExpMultiplier" value="5.5"/>
+				</item>	
+			<item id="" name="battleAxe">
+					<property name="Meshfile" value="#battleAxe?battleAxePrefab" />
+					<property name="Material" value="metal"/>
+					<property name="CustomIcon" value="battleAxe"/>
+					<property name="DescriptionKey" value="battleAxeDesc"/>
+					<property name="RepairTools" value="forgedSteel"/>
+					<property name="HoldType" value="17"/>
+					<property name="DegradationBreaksAfter" value="false"/>
+					<property name="SoundJammed" value="ItemNeedsRepair"/>
+					<property name="FuelValue" value="16"/>
+					<property name="EconomicValue" value="912"/>
+					<property name="SoundDestroy" value="wooddestroy1"/>
+					<property class="Action0">
+					<property name="Class" value="Melee"/>
+					<property name="Delay" value="2"/>
+					<property name="Range" value="2.4"/>
+					<property name="Sphere" value="0.1"/>
+					<property name="Block_range" value="3"/>
+					<property name="Sound_start" value="swoosh"/>
+					<property name="Stamina_usage" value="7"/>
+					<property name="DamageBonus.wood" value="1"/>
+					<property name="DamageBonus.head" value="15"/>
+					<property name="DamageBonus.glass" value="25"/>
+					<property name="DamageBonus.stone" value=".25"/>
+					<property name="DamageBonus.metal" value=".25"/>
+					<property name="DamageBonus.earth" value=".25"/>
+					<property name="DamageBonus.organic" value="1"/>
+					<property name="ActionExp" value="4"/>
+					<property name="ToolCategory.Butcher" value="0.75" param1="10"/>
+					<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
+					<property name="Sound_harvesting" value="open_animal" param1="organic" />
+				</property>
+					<property class="Attributes">
+					<property name="EntityDamage" value="12,35"/>
+					<property name="BlockDamage" value="15,25"/>
+					<property name="DegradationMax" value="400,1200"/>
+					<property name="DegradationRate" value="1,1"/>
+					<property name="DismembermentBaseChance" value="0.3,0.4"/>
+				</property>
+					<property name="Group" value="Ammo/Weapons"/>
+					<property name="ActionSkillGroup" value="Blade Weapons"/>
+					<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+					<property name="RepairExpMultiplier" value="5.5"/>
+			</item>
+			<item id="" name="batWood">
+					<property name="Extends" value="clubMaster"/>
+					<property name="Meshfile" value="#batWood?batWoodPrefab" />
+					<property name="CustomIcon" value="batWood"/>
+					<property name="Material" value="wood"/>
+					<property name="EconomicValue" value="100"/>
+					<property name="SellableToTrader" value="true"/>
+					<property name="DegradationBreaksAfter" value="false"/>
+					<property name="SoundJammed" value="ItemNeedsRepair"/>
+					<property class="Action0">
+					<property name="Range" value="2.6"/>
+					<property name="Stamina_usage" value="8"/>
+					<property name="Buff" value="criticalBlunt"/>
+					<property name="Buff_chance" value="0.2"/>
+					<property name="DamageBonus.head" value="4"/>
+				</property>
+				<property class="Attributes">
+					<property name="EntityDamage" value="9,16"/>
+					<property name="BlockDamage" value="11.8,29.5"/>
+					<property name="DegradationMax" value="200,600"/>
+				</property>
+					<property name="CritChance" value="0.2"/>
+					<property name="Group" value="Ammo/Weapons"/>
+					<property name="DescriptionKey" value="batWoodDesc"/>
+			</item>
+			<item id="" name="scythe">
+					<property name="DescriptionKey" value="scytheDesc"/>
+					<property name="Meshfile" value="#scythe?scythePrefab" />
+					<property name="CustomIcon" value="scythe"/>
+					<property name="SoundJammed" value="ItemNeedsRepair"/>
+					<property name="Material" value="metal"/>
+					<property name="RepairTools" value="forgedIron"/>
+					<property name="HoldType" value="17"/>
+					<property name="DegradationBreaksAfter" value="false"/>
+					<property name="SoundDestroy" value="metaldestroy1"/>
+					<property name="FuelValue" value="30"/>
+					<property class="Action0">
+					<property name="Class" value="Melee"/>
+					<property name="Delay" value="1.0"/>
+					<property name="Range" value="2.9"/>
+					<property name="Sphere" value="0.1"/>
+					<property name="Block_range" value="6"/>
+					<property name="Sound_start" value="swoosh"/>
+					<property name="Stamina_usage" value="5"/>
+					<property name="DamageBonus.glass" value="25"/>
+					<property name="DamageBonus.head" value="8"/>
+					<property name="DamageBonus.stone" value="0.1"/>
+					<property name="DamageBonus.metal" value="0.1"/>
+					<property name="DamageBonus.wood" value="0.2"/>
+					<property name="DamageBonus.earth" value="0.2"/>
+					<property name="DamageBonus.glass" value="25"/>
+					<property name="DamageBonus.plants" value="25"/>
+					<property name="DamageBonus.leaves" value="25"/>
+					<property name="DamageBonus.organic" value="10"/>
+				</property>
+					<property class="Attributes">
+					<property name="EntityDamage" value="12,20"/>
+					<property name="BlockDamage" value="1,2"/>
+					<property name="DegradationMax" value="300,800"/>
+					<property name="DismembermentBaseChance" value="0.1,0.2"/>
+				</property>
+				<property name="Group" value="Ammo/Weapons"/>
+				<property name="ActionSkillGroup" value="Blade Weapons"/>
+				<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+				<property name="EconomicValue" value="75"/>
+			</item>
+			<item id="" name="sickle">
+					<property name="DescriptionKey" value="sickleDesc"/>
+					<property name="Meshfile" value="#sickle?sicklePrefab" />
+					<property name="CustomIcon" value="sickle"/>
+					<property name="Material" value="metal"/>
+					<property name="Degradation" value="500" param1="false"/>
+					<property name="HoldType" value="47"/>
+					<property name="Stacknumber" value="1"/>
+					<property name="RepairTools" value="forgedIron"/>
+					<property name="DegradationBreaksAfter" value="false"/>
+					<property name="SoundJammed" value="ItemNeedsRepair"/>
+					<property name="SoundDestroy" value="wooddestroy1"/>
+					<property class="Action0">
+					<property name="Class" value="Melee"/>
+					<property name="Delay" value="0.2"/>
+					<property name="Range" value="2"/>
+					<property name="Sphere" value="0.1"/>
+					<property name="Block_range" value="12"/>
+					<property name="DamageBlock" value="0"/>
+					<property name="Sound_start" value="swoosh"/>
+					<property name="Stamina_usage" value="2"/>
+					<property name="DamageBonus.plants" value="25"/>
+					<property name="DamageBonus.leaves" value="25"/>
+				</property>
+					<property class="Attributes">
+					<property name="DegradationMax" value="250,750"/>
+					<property name="DegradationRate" value="1,1"/>
+				</property>
+					<property name="EconomicValue" value="75"/>
+					<property name="Group" value="Ammo/Weapons"/>
+					<property name="CraftingSkillGroup" value="craftSkillTools"/>
+					<property name="RepairExpMultiplier" value="5.5"/>
+				</item>
+
+		<item id="" name="Pitchfork">
+					<property name="Meshfile" value="#pitchFork?pitchForkPrefab" />
+					<property name="HoldType" value="18"/>
+					<property name="Material" value="metal"/>
+					<property name="RepairTools" value="forgedIron"/>
+					<property name="DegradationBreaksAfter" value="false"/>
+					<property name="SoundJammed" value="ItemNeedsRepair"/>
+					<property name="SoundDestroy" value="wooddestroy1"/>
+					<property name="FuelValue" value="30"/>
+					<property name="EconomicValue" value="240"/>
+					<property class="Action0">
+					<!-- AttackAction -->
+					<property name="Class" value="Melee"/>
+					<property name="Delay" value="1.5"/>
+					<property name="Range" value="2.7"/>
+					<property name="Sphere" value="0.1"/>	
+					<property name="DamageEntity" value="12"/>
+					<property name="Sound_start" value="swoosh"/>
+					<property name="Stamina_usage" value="6"/>
+					<property name="DamageBonus.head" value="10"/>
+					<property name="DamageBonus.glass" value="25"/>
+					<property name="Buff" value="bleeding"/>
+					<property name="Buff_chance" value="0.25"/>
+					<property name="ActionExp" value="2"/>
+					<property name="ActionExpBonusMultiplier" value="10"/>
+					</property>
+					<property class="Attributes">
+					<property name="EntityDamage" value="8,16"/>
+					<property name="BlockDamage" value="1,1"/>
+					<property name="DegradationMax" value="600,600"/>
+					<property name="DegradationRate" value="3,1"/>
+					</property>
+					<property name="Group" value="Ammo/Weapons"/>
+					<property name="ActionSkillGroup" value="Blade Weapons"/>
+					<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+					<property name="DescriptionKey" value="PitchforkDesc"/>
+				</item>
+			<item id="" name="trackerKnife">
+					<property name="DescriptionKey" value="trackerKnifeDesc"/>
+					<property name="Meshfile" value="#trackerKnife?trackerKnifePrefab" />
+					<property name="CustomIcon" value="trackerKnife"/>
+					<property name="Material" value="metal"/>
+					<property name="RepairTools" value="forgedIron"/>
+					<property name="HoldType" value="36"/>
+					<property name="DegradationBreaksAfter" value="false"/>
+					<property name="FuelValue" value="12"/>
+					<property name="EconomicValue" value="120"/>
+					<property name="SoundJammed" value="ItemNeedsRepair"/>
+					<property name="SoundDestroy" value="wooddestroy1"/>
+					<property class="Action0"> <!-- AttackAction -->
+					<property name="Class" value="Melee"/>
+					<property name="Delay" value="1.2"/>
+					<property name="Range" value="2.0"/>
+					<property name="Sphere" value="0.1"/>
+					<property name="Sound_start" value="swoosh"/>
+					<property name="Stamina_usage" value="3.5"/>
+					<property name="DamageBonus.head" value="4"/>
+					<property name="DamageBonus.glass" value="1"/>
+					<property name="DamageBonus.leaves" value="25"/>
+					<property name="DamageBonus.organic" value="10"/>
+					<property name="ToolCategory.Butcher" value="1" param1="10"/>
+					<property name="Buff" value="bleeding"/>
+					<property name="Buff_chance" value="0.5"/>
+					<property name="Sound_harvesting" value="open_animal" param1="organic" />
+				</property>
+					<property class="Attributes">
+					<property name="EntityDamage" value="5,15"/>
+					<property name="BlockDamage" value="1,2"/>
+					<property name="DegradationMax" value="200,600"/>
+					<property name="DegradationRate" value="1,1"/>
+					<property name="DismembermentBaseChance" value="0.01,0.02"/>
+				</property>
+					<property name="Group" value="Ammo/Weapons"/>
+					<property name="ActionSkillGroup" value="Blade Weapons"/>
+					<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+					<property name="RepairExpMultiplier" value="5.5"/>
+			</item>
+			<item id="" name="skinningKnife">
+					<property name="DescriptionKey" value="skinningKnifeDesc"/>
+					<property name="Meshfile" value="#skinningKnife?skinningKnifePrefab" />
+					<property name="CustomIcon" value="skinningKnife"/>
+					<property name="Material" value="metal"/>
+					<property name="RepairTools" value="forgedIron"/>
+					<property name="HoldType" value="36"/>
+					<property name="DegradationBreaksAfter" value="false"/>
+					<property name="FuelValue" value="12"/>
+					<property name="EconomicValue" value="120"/>
+					<property name="SoundJammed" value="ItemNeedsRepair"/>
+					<property name="SoundDestroy" value="wooddestroy1"/>
+					<property class="Action0"> <!-- AttackAction -->
+					<property name="Class" value="Melee"/>
+					<property name="Delay" value="1.2"/>
+					<property name="Range" value="2.2"/>
+					<property name="Sphere" value="0.1"/>
+					<property name="Sound_start" value="swoosh"/>
+					<property name="Stamina_usage" value="3.5"/>
+					<property name="DamageBonus.head" value="4"/>
+					<property name="DamageBonus.glass" value="1"/>
+					<property name="DamageBonus.leaves" value="25"/>
+					<property name="DamageBonus.organic" value="10"/>
+					<property name="ToolCategory.Butcher" value="1" param1="10"/>
+					<property name="Buff" value="bleeding"/>
+					<property name="Buff_chance" value="0.5"/>
+					<property name="Sound_harvesting" value="open_animal" param1="organic" />
+				</property>
+					<property class="Attributes">
+					<property name="EntityDamage" value="5,15"/>
+					<property name="BlockDamage" value="1,2"/>
+					<property name="DegradationMax" value="200,600"/>
+					<property name="DegradationRate" value="1,1"/>
+					<property name="DismembermentBaseChance" value="0.01,0.02"/>
+				</property>
+					<property name="Group" value="Ammo/Weapons"/>
+					<property name="ActionSkillGroup" value="Blade Weapons"/>
+					<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+					<property name="RepairExpMultiplier" value="5.5"/>
+			</item>
+			<item id="" name="pipeWrench">
+					<property name="Extends" value="wrench"/>
+					<property name="Meshfile" value="#pipeWrench?pipeWrenchPrefab" />
+					<property name="CustomIcon" value="pipeWrench"/>
+					<property name="DescriptionKey" value="pipeWrenchDesc"/>
+			</item>
+			<item id="" name="lugWrench">
+					<property name="Extends" value="wrench"/>
+					<property name="Meshfile" value="#lugWrench?lugWrenchPrefab" />
+					<property name="CustomIcon" value="lugWrench"/>
+					<property name="DescriptionKey" value="lugWrenchDesc"/>
+			</item>
+
+		</append>
+	</config>	
+<config name="recipes">
+<append xpath="/recipes">
+	<!-- Melee Weapons by JaxTeller718 -->
+	<recipe name="ironTippedSpear" count="1">
+		<ingredient name="ironArrowHead" count="1"/>
+		<ingredient name="wood" count="20"/>
+	</recipe>
+	<recipe name="steelTippedSpear" count="1">
+		<ingredient name="steelArrowHead" count="1"/>
+		<ingredient name="wood" count="20"/>
+	</recipe>
+	<recipe name="battleAxe" count="1" craft_area="workbench">
+		<ingredient name="forgedIron" count="50"/>
+		<ingredient name="wood" count="20"/>
+	</recipe>
+	<recipe name="sickle" count="1" craft_area="workbench">
+		<ingredient name="forgedIron" count="15"/>
+		<ingredient name="wood" count="5"/>
+	</recipe>
+	<recipe name="scythe" count="1" craft_area="workbench">
+		<ingredient name="forgedIron" count="10"/>
+		<ingredient name="wood" count="5"/>
+	</recipe>
+	<recipe name="woodtippedSpear" count="1">
+		<ingredient name="wood" count="20"/>
+	</recipe>
+	<recipe name="Crowbar" count="1" craft_area="workbench">
+		<ingredient name="forgedSteel" count="12"/>
+		<ingredient name="mechanicalParts" count="4"/>
+	</recipe>
+	<!-- Melee Weapons by JaxTeller718 -->
+</append>
+</config>
+<config name="loot">
+<append xpath="/lootcontainers/lootgroup[@name='weaponsMelee']">
+		<item name="scythe"  prob="0.25"/>
+		<item name="sickle" prob="0.15"/>
+		<item name="battleAxe" prob="0.15"/>
+		<item name="batWood" />
+		<item name="metalPipe" />
+		<item name="Crowbar" prob="0.15"/>
+		<item name="Pitchfork" prob="0.25"/>
+		<item name="trackerKnife" />
+		<item name="skinningKnife" />
+	<!-- Melee Weapons by JaxTeller718 -->
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='rareTools']">
+		<item name="sickle" prob="0.15"/>
+		<item name="Crowbar" prob="0.15"/>
+		<item name="lugWrench" prob="0.15"/>
+		<item name="pipeWrench" prob="0.15"/>
+	<!-- Melee Weapons by JaxTeller718 -->
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='rareAutomotive']">
+		<item name="Crowbar" prob="0.15"/>
+		<item name="lugWrench" prob="0.15"/>
+		<item name="pipeWrench" prob="0.15"/>
+	<!-- Melee Weapons by JaxTeller718 -->
+</append>
+</config>
+
+</configs>
