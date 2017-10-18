@@ -1,0 +1,4 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish
+stoneFence1,"","","","Stone Fencing","","","",""
+stoneFence1Desc,"","","","Oversized stone fence and post set meant to be used together","","","",""
+stonePost1,"","","","Stone Post Large","","","",""

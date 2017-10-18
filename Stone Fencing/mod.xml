@@ -1,0 +1,15 @@
+<mod>
+	<info>
+		<author>JaxTeller718</author>
+		<name>Stone Fencing</name>
+		<description>Oversized stone fence and post set meant to be used together</description>
+		<mod_version>1.0</mod_version>
+		<game_version>16.3</game_version>
+		<launcher_version></launcher_version>
+	</info>
+	
+	<config_mods>
+		<import file="Configs\StoneFencing.xml" />
+	</config_mods>
+	
+</mod>

@@ -1,0 +1,42 @@
+<configs>
+	<config name="blocks">	
+		<!-- Stone Fencing By JaxTeller718 -->
+		<append xpath="/blocks">	
+			<block id="" name="stoneFence1">
+				<property name="Extends" value="concreteMaster" />
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#stoneFence?stoneFencePrefab" />
+        		<property name="CustomIcon" value="stoneFence1" />
+        		<property name="DescriptionKey" value="stoneFence1Desc"/>
+				<property name="MultiBlockDim" value="3,3,1" />
+				<property name="Stacknumber" value="100"/>
+			</block>
+			<block id="" name="stonePost1">
+				<property name="Extends" value="concreteMaster" />
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#stonePost?stonePostPrefab" />
+        		<property name="CustomIcon" value="stonePost1" />
+        		<property name="DescriptionKey" value="stoneFence1Desc"/>
+				<property name="MultiBlockDim" value="1,3,1" />
+				<property name="Stacknumber" value="50"/>
+			</block>
+		</append>
+	</config>
+
+
+<config name="recipes">
+<append xpath="/recipes">
+	<!-- Stone Fencing by JaxTeller718 -->
+	<recipe name="stoneFence1" count="1">
+		<ingredient name="forgedIron" count="10"/>
+		<ingredient name="concreteMix" count="20"/>
+	</recipe>
+	<recipe name="stonePost1" count="1">
+		<ingredient name="concreteMix" count="50"/>
+	</recipe>
+	<!-- Stone Fencing -->
+</append>
+</config>
+
+
+</configs>
