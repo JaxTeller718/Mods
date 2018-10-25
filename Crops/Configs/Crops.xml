@@ -1,0 +1,352 @@
+<configs>
+	<config name="blocks">	
+		<!-- Wheat By JaxTeller718 -->
+		<append xpath="/blocks">	
+
+	<block id="" name="plantedWheat1">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#plantedWheat1?plantedWheat1Prefab" />
+		<property name="CustomIcon" value="plantedWheat1"/>
+	<property name="Collide" value="melee"/>
+		<property name="PlantGrowing.Next" value="plantedWheat2"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="plantedWheat2"/>
+		</property>
+		<drop event="Destroy" name="plantedWheat1" count="1"/>
+	</block>
+	<block id="" name="plantedWheat2">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		<property name="CustomIcon" value="treePlainsGrassDiagonal"/>
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#plantedWheat2?plantedWheat2Prefab" />
+	<property name="Collide" value="melee"/>
+		<property name="PlantGrowing.Next" value="plantedWheat3Harvest"/>
+		<drop event="Destroy" name="plantedWheat1" count="1"/>
+	</block>
+	<block id="" name="plantedWheat3Harvest">
+		<property name="Extends" value="cropsHarvestableMaster"/>
+		<property name="CustomIcon" value="treeSnowyGrassDiagonal"/>
+		    	<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#plantedWheat3Harvest?plantedWheat3HarvestPrefab" />
+	<property name="Collide" value="melee"/>
+		<drop event="Harvest" name="Wheat" count="1" />
+	</block>
+	<block id="" name="plantedCarrot1">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		<property name="CustomIcon" value="carrotSeed"/>
+		<property name="DescriptionKey" value="plantedCarrot1Desc"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="#JaxPlants?plantedCarrot1Prefab"/>
+		<property name="PlantGrowing.Next" value="plantedCarrot2"/>
+		<drop event="Destroy" name="plantedCarrot1" count="1"/>
+	</block>
+	<block id="" name="plantedCarrot2">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="CustomIcon" value="plantedPotato3Harvest"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="#JaxPlants?plantedCarrot2Prefab"/>
+		<property name="PlantGrowing.Next" value="plantedCarrot3Harvestable"/>
+		<drop event="Destroy" name="plantedCarrot1" count="1"/>
+	</block>
+	<block id="" name="plantedCarrot3Harvestable">
+		<property name="Extends" value="cropsHarvestableMaster"/>
+		<property name="CustomIcon" value="plantedPotato3Harvest"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="#JaxPlants?plantedCarrot3Harvestable"/>
+		<drop event="Harvest" name="Carrot" count="1" />
+	</block>
+	<block id="" name="plantedCucumber1">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		<property name="CustomIcon" value="cucumberSeed"/>
+		<property name="DescriptionKey" value="plantedCucumber1Desc"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="#JaxPlants?plantedCucumber1Prefab"/>
+		<property name="PlantGrowing.Next" value="plantedCucumber2"/>
+		<drop event="Destroy" name="plantedCucumber1" count="1"/>
+	</block>
+	<block id="" name="plantedCucumber2">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="CustomIcon" value="plantedPotato3Harvest"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="#JaxPlants?plantedCucumber2Prefab"/>
+		<property name="PlantGrowing.Next" value="plantedCucumber3Harvestable"/>
+		<drop event="Destroy" name="plantedCucumber1" count="1"/>
+	</block>
+	<block id="" name="plantedCucumber3Harvestable">
+		<property name="Extends" value="cropsHarvestableMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="CustomIcon" value="plantedPotato3Harvest"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="#JaxPlants?plantedCucumber3Harvestable"/>
+		<drop event="Harvest" name="Cucumber" count="1" />
+	</block>
+	<block id="" name="plantedOnion1">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		<property name="CustomIcon" value="plantedOnion1"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#JaxPlants?plantedOnion1Prefab"/>
+		<property name="PlantGrowing.Next" value="plantedOnion2"/>
+		<drop event="Destroy" name="plantedOnion1" count="1"/>
+		<property name="DescriptionKey" value="plantedOnion1Desc"/>
+	</block>
+	<block id="" name="plantedOnion2">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="CustomIcon" value="plantedPotato3Harvest"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#JaxPlants?plantedOnion2Prefab"/>
+		<property name="PlantGrowing.Next" value="plantedOnion3Harvest"/>
+		<drop event="Destroy" name="plantedOnion1" count="1"/>
+		<property name="DescriptionKey" value="plantsFarmGroupDesc"/>
+	</block>
+	<block id="" name="plantedOnion3Harvest">
+		<property name="Extends" value="cropsHarvestableMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="CustomIcon" value="plantedPotato3Harvest"/>
+		<property name="Model" value="#JaxPlants?plantedOnion3Harvest"/>
+		<drop event="Harvest" name="Onion" count="1" />
+	</block>
+	<block id="" name="plantedLettuce1">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		<property name="CustomIcon" value="plantedLettuce1"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#JaxPlants?plantedLettuce1Prefab"/>
+		<property name="PlantGrowing.Next" value="plantedLettuce2"/>
+		<drop event="Destroy" name="plantedLettuce1" count="1"/>
+		<property name="DescriptionKey" value="plantedLettuce1Desc"/>
+	</block>
+	<block id="" name="plantedLettuce2">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="CustomIcon" value="plantedPotato3Harvest"/>
+		<property name="Model" value="#JaxPlants?plantedLettuce2Prefab"/>
+		<property name="PlantGrowing.Next" value="plantedLettuce3Harvest"/>
+		<drop event="Destroy" name="plantedLettuce1" count="1"/>
+		<property name="DescriptionKey" value="plantsFarmGroupDesc"/>
+	</block>
+	<block id="" name="plantedLettuce3Harvest">
+		<property name="Extends" value="cropsHarvestableMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="CustomIcon" value="plantedPotato3Harvest"/>
+		<property name="Model" value="#JaxPlants?plantedLettuce3Harvestable"/>
+		<property name="Collide" value="melee"/>
+		<drop event="Harvest" name="Lettuce" count="1" />
+	</block>
+	<block id="" name="plantedCabbage1">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		<property name="DescriptionKey" value="plantedCabbage1Desc"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="#JaxPlants?plantedCabbage1"/>
+		<property name="PlantGrowing.Next" value="plantedCabbage2"/>
+		<drop event="Destroy" name="plantedCabbage1" count="1"/>
+	</block>
+	<block id="" name="plantedCabbage2">
+		<property name="Extends" value="cropsGrowingMaster"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="CustomIcon" value="plantedPotato3Harvest"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="#JaxPlants?plantedCabbage2"/>
+		<property name="PlantGrowing.Next" value="plantedCabbage3Harvestable"/>
+		<drop event="Destroy" name="plantedCabbage1" count="1"/>
+	</block>
+	<block id="" name="plantedCabbage3Harvestable">
+		<property name="Extends" value="cropsHarvestableMaster"/>
+		<property name="CustomIcon" value="plantedCabbage3Harvestable"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="#JaxPlants?plantedCabbage3"/>
+		<drop event="Harvest" name="Cabbage" count="1" />
+	</block>
+		</append>
+	</config>
+
+	<config name="items">
+<append xpath="/items">
+	<!-- Wheat -->
+
+	<item id="" name="Wheat">
+		<property name="Meshfile" value="Items/Crafting/plant_fibers"/>
+		<property name="Material" value="organic"/>
+		<property name="HoldType" value="16"/>
+		<property name="CraftingIngredientTime" value="5"/>
+		<property name="EconomicValue" value="10"/>
+		<property name="EconomicBundleSize" value="5"/>
+		<property class="Action0">
+			<property name="Class" value="PlaceAsBlock"/>
+			<property name="Delay" value="0.5"/>
+			<property name="Blockname" value="plantedWheat1"/>
+		</property>
+		<property class="Action1">
+			<property name="Class" value="PlaceAsBlock"/>
+			<property name="Delay" value="0.5"/>
+			<property name="Blockname" value="plantedWheat1"/>
+		</property>
+		<property name="Group" value="Food/Cooking"/>
+		<property name="DescriptionKey" value="wheatDesc"/>
+	</item>
+	<item id="" name="Onion">
+		<property name="Meshfile" value="Items/Food/vegetable_potatoPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="3" />
+		<property name="Stacknumber" value="500" />
+		<!-- STK resource -->
+		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="5" />
+		<property name="CraftingIngredientTime" value="10" />
+		<!-- 14 is large round hold -->
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="2" />
+			<property name="Buff" value="eatFood_1_Trigger" />
+			<property name="Gain_water" value="0" />
+			<property name="Gain_wellness" value="0" />
+			<property name="Sound_start" value="player_eating" />
+		</property>
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	<item id="" name="Carrot">
+		<property name="Meshfile" value="Items/Food/vegetable_potatoPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="3" />
+		<property name="Stacknumber" value="500" />
+		<!-- STK resource -->
+		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="5" />
+		<property name="CraftingIngredientTime" value="10" />
+		<!-- 14 is large round hold -->
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="2" />
+			<property name="Buff" value="eatFood_1_Trigger" />
+			<property name="Gain_water" value="0" />
+			<property name="Gain_wellness" value="0" />
+			<property name="Sound_start" value="player_eating" />
+		</property>
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	<item id="" name="Lettuce">
+		<property name="Meshfile" value="#cabbage?cabbage" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="23" />
+		<property name="Stacknumber" value="500" />
+		<!-- STK resource -->
+		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="5" />
+		<property name="CraftingIngredientTime" value="10" />
+		<!-- 14 is large round hold -->
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="2" />
+			<property name="Buff" value="eatFood_1_Trigger" />
+			<property name="Gain_water" value="0" />
+			<property name="Gain_wellness" value="0" />
+			<property name="Sound_start" value="player_eating" />
+		</property>
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	<item id="" name="Cabbage">
+		<property name="Meshfile" value="#cabbage?cabbage" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="23" />
+		<property name="Stacknumber" value="500" />
+		<!-- STK resource -->
+		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="5" />
+		<property name="CraftingIngredientTime" value="10" />
+		<!-- 14 is large round hold -->
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="2" />
+			<property name="Buff" value="eatFood_1_Trigger" />
+			<property name="Gain_water" value="0" />
+			<property name="Gain_wellness" value="0" />
+			<property name="Sound_start" value="player_eating" />
+		</property>
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	<item id="" name="Cucumber">
+		<property name="Meshfile" value="Items/Food/vegetable_potatoPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="3" />
+		<property name="Stacknumber" value="500" />
+		<!-- STK resource -->
+		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="5" />
+		<property name="CraftingIngredientTime" value="10" />
+		<!-- 14 is large round hold -->
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="2" />
+			<property name="Buff" value="eatFood_1_Trigger" />
+			<property name="Gain_water" value="0" />
+			<property name="Gain_wellness" value="0" />
+			<property name="Sound_start" value="player_eating" />
+		</property>
+		<property name="Group" value="Food/Cooking" />
+	</item>
+		</append>
+	</config>	
+<config name="recipes">
+<append xpath="/recipes">
+	<!-- Wheat by JaxTeller718 -->
+	<recipe name="plantedWheat1" count="1" craft_time="1"  >
+		<ingredient name="Wheat" count="1"/>
+	</recipe>	
+	<recipe name="plantedCabbage1" count="1" craft_time="1"  >
+		<ingredient name="Cabbage" count="1"/>
+	</recipe>	
+	<recipe name="plantedLettuce1" count="1" craft_time="1"  >
+		<ingredient name="Lettuce" count="1"/>
+	</recipe>	
+	<recipe name="plantedOnion1" count="1" craft_time="1"  >
+		<ingredient name="Onion" count="1"/>
+	</recipe>	
+	<recipe name="plantedCucumber1" count="1" craft_time="1"  >
+		<ingredient name="Cucumber" count="1"/>
+	</recipe>	
+	<recipe name="plantedCarrot1" count="1" craft_time="1"  >
+		<ingredient name="Carrot" count="1"/>
+	</recipe>	
+	<!-- Wheat -->
+</append>
+</config>
+
+<config name="loot">
+<append xpath="/lootcontainers/lootgroup[@name='seeds']">
+		<item name="plantedWheat1" />
+		<item name="plantedCabbage1" />
+		<item name="plantedLettuce1" />
+		<item name="plantedCucumber1" />
+		<item name="plantedCarrot1" />
+		<item name="plantedOnion1" />
+</append>
+
+</config>
+
+</configs>
